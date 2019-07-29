@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- XML文件需以utf-8编码-->
+<sitemapindex>
+    <!--必填，以 <sitemapindex> 开始标记作为开始，以 </sitemapindex> 结束标记作为结束-->
+    <sitemap>
+        <!--必填，以<sitemap>标签提交一个子sitemap文件-->
+        <loc>http://example.com/ext/xmlsitemap/add/201201/index_20120106.xml</loc>
+
+        <!--必填，识别sitemap的位置-->
+        <lastmod>2009-12-14</lastmod>
+        <!--选填，识别相对sitemap文件的修改时间-->
+    </sitemap>
+    <!--必填，标签闭合-->
+</sitemapindex>
+        <!--必填，标签闭合-->
