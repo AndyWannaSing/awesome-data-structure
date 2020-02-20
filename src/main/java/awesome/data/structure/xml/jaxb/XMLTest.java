@@ -10,9 +10,12 @@ public class XMLTest {
         String description = "Sedan";
         Car.CarExt carExt = new Car.CarExt("黎青", "123", "TTT", 100l);
         List<Car.CarExt> carExtList = new ArrayList<>();
+        List<Car.CarExt> cars = new ArrayList<>();
         carExtList.add(carExt);
+        cars.add(carExt);
+        cars.add(carExt);
 
-        Car car = new Car(registration, brand, description, carExt, carExtList);
+        Car car = new Car(registration, brand, description, carExt, carExtList, cars);
         XmlUtil xmlUtil = new XmlUtil();
         String xml = xmlUtil.convertToXml(car, car.getClass());
 

@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.*;
 import java.util.List;
 
 @XmlRootElement
-@XmlType(propOrder = {"brand", "description", "carExt", "extList"})
+@XmlType(propOrder = {"brand", "description", "carExt", "extList", "cars"})
 @NoArgsConstructor
 @AllArgsConstructor
 public class Car {
@@ -21,6 +21,8 @@ public class Car {
     private CarExt carExt;
 
     private List<CarExt> extList;
+
+    private List<CarExt> cars;
 
     @XmlAttribute(name = "new_registration")
     public String getRegistration() {
@@ -66,6 +68,15 @@ public class Car {
 
     public void setExtList(List<CarExt> extList) {
         this.extList = extList;
+    }
+
+    @XmlElement
+    public List<CarExt> getCars() {
+        return cars;
+    }
+
+    public void setCars(List<CarExt> cars) {
+        this.cars = cars;
     }
 
     @XmlRootElement
